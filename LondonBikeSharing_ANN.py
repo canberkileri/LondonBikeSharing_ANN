@@ -101,7 +101,7 @@ def plotCount():
 
 
 
-#plot_corr(london)
+
 
 
 def split_train_and_test(london):
@@ -276,5 +276,3 @@ plot_corr(london)
 plot_corr(london_train)
 
 
-model = keras.models.load_model("65bin.h5", custom_objects = {'<lambda>': LeakyReLU} )
-test_loss = model.evaluate(london_test_X, london_test_Y)
